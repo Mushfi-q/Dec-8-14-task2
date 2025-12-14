@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Court Click - Legal-Tech Platform</title>
 </head>
 <body>
     <header class="header">
-        <section class="container"  >
-            <div style="background-color: #511131;" height= "96px" width="1440px">
-                <img src="/images/courtclicklogo.png" height="26px" width="169px">
-                <div>
-                  <nav><a href="">About</a><a href="">Features</a><a href="">User Type</a><a href="">Career</a><a href="">Notraise Document</a></nav>
-                  <button href="">Contact Us</button> <button>Login</button>
+        <section   >
+            <div class="container">
+                <div class="navi">
+                  <img src="images/courtclicklogo.png" alt="Court Click Logo" height="26px" width="169px">
+                  <nav><a href="#about">About</a><a href="#features">Features</a><a href="#user-types">User Type</a><a href="#career">Career</a><a href="#partner">Partner/Associate</a></nav>
+                  <button>Contact Us</button> <button class="login-btn">Log In</button>
+                  <button class="mobile-menu-btn">☰</button>
                 </div>
             </div>
         </section>
@@ -20,13 +22,12 @@
     <main>
         <section>
             <div>
-                <div>
+                <div class="hero-section">
                   <h6>All in <strong>one</strong> Legal-Tech Platform</h6>
-                  <h1>Manage Your Legal Journey </h1>
+                  <h1 class="smallh">Manage Your Legal Journey </h1>
                   <h1><strong>Anywhere, Anytime</strong></h1>
-                  <p>Whether you’re a lawyer, litigant, clerk, or student - <br><strong>Court Click</strong> simplifies every step of your legal process.</p>
-                  <button>Download Our App</button> <button>arrow</button>
-                  </div>
+                  <p>Whether you're a lawyer, litigant, clerk, or student - <strong>Court Click</strong> simplifies every step of your legal process.</p>
+                  <button>Download Our App</button>
                   <table>
                     <tr>
                         <th>15K+</th>
@@ -39,119 +40,124 @@
                         <td>Review Ratings</td>
                     </tr>
                   </table>
-                  <div>
-                    <img src="/images/phoneimg.png" height="720px" width="1065">
+                  <div class="hero-image">
+                    <img src="images/phoneimg.png" alt="Court Click App Preview">
                   </div>
-                  <div class="features">
+                </div>
+                  <div class="features" id="features">
                     <h6>Key Features</h6>
-                    <h1>Experience a</h1>
+                    <h1 class="smallh">Experience a</h1>
                     <h1><strong>Modern Legal-Tech Solution</strong></h1>
                     <p>Designed to simplify, support, and speed up every step of your legal journey - wherever you are.</p>
                     <button>Explore Now</button>
                     <div class="cardsection">
                         <div class="card">
-                            <img src="/images/Icon.png" height="40" width="40">
+                            <img src="images/Icon.png" alt="Case Management Icon" height="40" width="40">
                             <h6>Case Management</h6>
-                            <p>Track, update, and manage your <br>court cases - all in one place.</p>
-                            <button>Know More</button> <button>arrow</button>
+                            <p>Track, update, and manage your court cases - all in one place.</p>
+                            <button>Know More</button>
                         </div>
                         <div class="card">
-                            <img src="/images/Icon2.png" height="40" width="40">
+                            <img src="images/Icon2.png" alt="Certified True Copy Icon" height="40" width="40">
                             <h6>Certified True Copy</h6>
-                            <p>Get your official court judgment <br>copy without stepping into court.</p>
-                            <button>Know More</button> <button>arrow</button>
+                            <p>Get your official court judgment copy without stepping into court.</p>
+                            <button>Know More</button>
                         </div>
                         <div class="card">
-                            <img src="/images/Line.png" height="40" width="40">
+                            <img src="images/Line.png" alt="eSign Icon" height="40" width="40">
                             <h5>eSign</h5>
-                            <p>Sign vakalats & legal documents <br>digitally - no printer, no court visit.</p>
-                            <button>Know More</button> <button>arrow</button>
+                            <p>Sign vakalats & legal documents digitally - no printer, no court visit.</p>
+                            <button>Know More</button>
                         </div>
                         <div class="card">
-                            <img src="/images/Frame.png" height="40" width="40">
+                            <img src="images/Frame.png" alt="Notarise Icon" height="40" width="40">
                             <h4>Notarise</h4>
-                            <p>Get notified instantly if an FIR is <br>registered in your name - stay informed, <br>stay protected.</p>
+                            <p>Get notified instantly if an FIR is registered in your name - stay informed, stay protected.</p>
+                            <button>Know More</button>
                         </div>
                     </div>
                   </div>
-                  <div class="About">
+                  <div class="About" id="about">
                     <h4>About</h4>
-                    <h1>From Court Confusion</h1>
+                    <h1 class="smallh">From Court Confusion</h1>
                     <h1><strong>to Court Click</strong></h1>
+                    <p>Court Click is a modern legal-tech platform built to simplify the way people track and manage court cases. Whether you're a litigant, lawyer, NRI, or clerk - we help you stay updated, request documents, and even sign forms digitally. All through your phone. All without the courtroom chaos.</p>
                     <button>Learn More</button>
-                    <img src="/images/phoneimg2.png" width="689" height="321">
+                    <img src="images/phoneimg2.png" alt="Court Click App Interface" width="689" height="321">
                   </div>
-                  <div class="userType">
-                    <h4>User Type</h4>
-                    <h1>Different Users</h1>
+                  <div class="userType" id="user-types">
+                    <h4 style="color: #999;">User Type</h4>
+                    <h1 class="smallh">Different Users</h1>
                     <h1><strong>One Powerful Platform.</strong></h1>
-                    <p>Court Click understands your needs, From first-time users to <br>experienced professionals - Court Click works for all.</p>
+                    <p>Court Click understands your needs. From first-time users to experienced professionals - Court Click works for all.</p>
                     <div class="cardsection2">
                         <div class="card">
-                            <h3>Public/Litigent</h3>
-                            <p>Court Click simplifies following your court case. Enter your case number <br>to get automatic updates on hearings, orders, and judgments, delivered <br>right to you.</p>
-                            <button>Know More</button> <button>arrow</button>
+                            <h3 style="color: white;">Public/Litigant</h3>
+                            <p>Court Click simplifies following your court case. Enter your case number to get automatic updates on hearings, orders, and judgments, delivered right to you.</p>
+                            <button>Know More</button>
                         </div>
                         <div class="card">
-                            <h3>Lawyers</h3>
-                            <p>Court Click is an all-in-one app for lawyers to manage cases, get real-<br>time High Court updates, and streamline tasks like e-signatures, billing, <br>and client communication.</p>
-                            <button>Know More</button> <button>arrow</button>
+                            <h3 style="color: white;">Lawyers</h3>
+                            <p>Court Click is an all-in-one app for lawyers to manage cases, get real-time High Court updates, and streamline tasks like e-signatures, billing, and client communication.</p>
+                            <button>Know More</button>
                         </div>
                         <div class="card">
-                            <h3>Clerks</h3>
-                            <p>Court Click simplifies following your court case. Enter your case number <br>to get automatic updates on hearings, orders, and judgments, delivered <br>right to you.</p>
-                            <button>Know More</button> <button>arrow</button>
+                            <h3 style="color: white;">Clerks</h3>
+                            <p>Court Click simplifies following your court case. Enter your case number to get automatic updates on hearings, orders, and judgments, delivered right to you.</p>
+                            <button>Know More</button>
                         </div>
                         <div class="card">
-                            <h3>Law Students</h3>
-                            <p>Court Click simplifies following your court case. Enter your case number <br>to get automatic updates on hearings, orders, and judgments, delivered <br>right to you.</p>
-                            <button>Know More</button> <button>arrow</button>
+                            <h3 style="color: white;">Law Students</h3>
+                            <p>Court Click simplifies following your court case. Enter your case number to get automatic updates on hearings, orders, and judgments, delivered right to you.</p>
+                            <button>Know More</button>
                         </div>
                     </div>
                   </div>
                   <div class="uk">
-                    <h1>Your court casea</h1>
-                    <h1><strong>lways in your pocket.</strong></h1>
-                    <img src="/images/phoneimg3.png" height="570.86px" width="372.13px">
+                    <h1 class="smallh">Your court case</h1>
+                    <h1><strong>always in your pocket.</strong></h1>
                     <div>
                         <div>
-                            <p>Court Click is a modern legal-tech platform built to <br>simplify the way people track and manage court <br>cases. Whether you’re a litigant, lawyer, NRI, or clerk <br> - we help you stay updated, request documents, and even sign forms digitally. All <br>through your phone. All without the courtroom chaos.</p>
+                            <img src="images/phoneimg3.png" alt="Court Click Mobile App" height="570.86px" width="372.13px">
+                        </div>
+                        <div>
+                            <p>Court Click is a modern legal-tech platform built to simplify the way people track and manage court cases. Whether you're a litigant, lawyer, NRI, or clerk - we help you stay updated, request documents, and even sign forms digitally. All through your phone. All without the courtroom chaos.</p>
                             <h2>Download Court Click App</h2>
                             <button>App Store</button><button>Play Store</button>
                         </div>
                         <div>
-                            <h2>Need help finding your case <br>or facing troble?</h2>
-                            <p>Our support team is here for you - just click Contact <br>Support or WhatsApp to reach us on .</p>
+                            <h2>Need help finding your case or facing trouble?</h2>
+                            <p>Our support team is here for you - just click Contact Support or WhatsApp to reach us.</p>
                             <button>Contact Us</button>
-                            <button>Chat in Whatsapp</button>
+                            <button>Chat in WhatsApp</button>
                         </div>
                     </div>
                   </div>
                   <div class="testimonials">
                     <h4>Testimonials</h4>
-                    <div>
-                    <h1>Don’t take our word for it, </h1>
+                    <h1>Don't take our word for it, </h1>
                     <h1><strong>Have a look yourself</strong></h1>
-                    <p>Court Click has completely changed the way I manage my <br>practice. I no longer have to juggle between different tools-<br>everything is right there in one dashboard. It saves me hours <br>every week and keeps my cases well-organized.</p>
-                    <p><strong>Adv. Arun Menon</strong></p>
-                    <p>Lawyer at Kerala High Court</p>
                     <div>
-                        <p>Review rating</p>
-                        <p>*****</p>
-                    </div>
-                    </div>
-                    <div class="card">
-                        <p>Court Click has completely changed the way I manage my <br>practice. I no longer have to juggle between different tools-<br>everything is right there in one dashboard. It saves me hours <br>every week and keeps my cases well-organized.</p>
-                    <p><strong>Adv. Arun Menon</strong></p>
-                    <p>Lawyer at Kerala High Court</p>
-                    <div>
-                        <p>Review rating</p>
-                        <p>*****</p>
-                    </div>
+                        <div class="card">
+                            <p>Court Click has completely changed the way I manage my practice. I no longer have to juggle between different tools - everything is right there in one dashboard. It saves me hours every week and keeps my cases well-organized.</p>
+                            <p><strong>Adv. Arun Menon</strong></p>
+                            <p>Lawyer at Kerala High Court</p>
+                            <div>
+                                <p>⭐⭐⭐⭐⭐</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <p>Court Click has completely changed the way I manage my practice. I no longer have to juggle between different tools - everything is right there in one dashboard. It saves me hours every week and keeps my cases well-organized.</p>
+                            <p><strong>Neha Suresh</strong></p>
+                            <p>Public Litigant, Karnataka</p>
+                            <div>
+                                <p>⭐⭐⭐⭐⭐</p>
+                            </div>
+                        </div>
                     </div>
                     <table>
                     <tr>
-                        <th>15K+</th>
+                        <th>10K+</th>
                         <th>2K+</th>
                         <th>4.7/5</th>
                     </tr>
@@ -162,26 +168,41 @@
                     </tr>
                   </table>
                   </div>
-                  <div class="faq">
+                  <div class="faq" id="faq">
                     <h4>FAQ</h4>
                     <h1>Got Questions?</h1>
-                    <h1><strong>We’ve Got You Covered.</strong></h1>
+                    <h1><strong>We've Got You Covered.</strong></h1>
                     <p>From case tracking to certified copies - find answers to everything you need to know.</p>
                     <div class="grid">
-                        <div>
-                            <p>01</p><p><strong>How do I track my case?</strong></p><button>+</button>
+                        <div class="faq-item">
+                            <div>
+                                <p>01</p><p><strong>How do I track my case?</strong></p><button class="faq-toggle">+</button>
+                            </div>
+                            <div class="faq-answer">Need to do a one-time setup for linking your cases. You'll be notified about hearing dates, next posting, progress, and court records.</div>
                         </div>
-                        <div>
-                            <p>02</p><p><strong>How do I track my case?</strong></p><button>+</button>
+                        <div class="faq-item">
+                            <div>
+                                <p>02</p><p><strong>What kind of updates will I get?</strong></p><button class="faq-toggle">+</button>
+                            </div>
+                            <div class="faq-answer">You'll be notified about hearing dates, next posting, progress, and court records.</div>
                         </div>
-                        <div>
-                            <p>03</p><p><strong>How do I track my case?</strong></p><button>+</button>
+                        <div class="faq-item">
+                            <div>
+                                <p>03</p><p><strong>How do I request a CTC?</strong></p><button class="faq-toggle">+</button>
+                            </div>
+                            <div class="faq-answer">You can request a Certified True Copy (CTC) directly through the app. Simply navigate to the document section and follow the prompts to submit your request.</div>
                         </div>
-                        <div>
-                            <p>04</p><p><strong>How do I track my case?</strong></p><button>+</button>
+                        <div class="faq-item">
+                            <div>
+                                <p>04</p><p><strong>How do alerts work?</strong></p><button class="faq-toggle">+</button>
+                            </div>
+                            <div class="faq-answer">Alerts are automatically sent to your registered mobile number and email whenever there's an update on your case, such as hearing dates, orders, or judgments.</div>
                         </div>
-                        <div>
-                            <p>05</p><p><strong>How do I track my case?</strong></p><button>+</button>
+                        <div class="faq-item">
+                            <div>
+                                <p>05</p><p><strong>How do I contact support?</strong></p><button class="faq-toggle">+</button>
+                            </div>
+                            <div class="faq-answer">You can contact our support team through the app, via email at support@courtclick.com, or by calling +91 9746214172. We're available to help you with any questions or issues.</div>
                         </div>
                     </div>
                   </div>
@@ -190,44 +211,51 @@
         </section>
     </main>
     <footer class="footer">
-        <img src="/images/courtclicklogo.png" height="26px" width="169px">
-        Digilaw Legal Software Pvt Ltd. <br>Doing Business as Court Click
-        <table>
-            <tr>
-                
-                <th>Quick Links</th>
-                <th>Legal</th>
-                <th>Informations</th>
-                <th>Company</th>
-            </tr>
-            <tr>
-                <td>Features</td>
-                <td>Terms & Conditions</td>
-                <td>FAQ</td>
-                <td>About Us</td>
-            </tr>
-            <tr>
-                <td>User Type</td>
-                <td>Privacy Polycy</td>
-                <td>Support</td>
-                <td>Career</td>
-            </tr>
-            <tr>
-                <td>pricing</td>
-                <td>Refund Policy</td>
-                <td> </td>
-                <td>Contact Us</td>
-
-            </tr>
-            <tr>
-                <td> </td>
-                <td>Cookie Policy</td>
-                <td> </td>
-                <td> </td>
-            </tr>
-        </table>
-        <button>linkidin</button><button>facebook</button><button>Insta</button> <p>A product of <b>Digilaw</b></p>
-        <p>&copy; 2025 Court Click. All rights reserved</p>
+        <div class="container">
+            <img src="images/courtclicklogo.png" alt="Court Click Logo" height="26px" width="169px">
+            <p>Digilaw Legal Software Pvt Ltd.<br>Doing Business as Court Click<br>support@courtclick.com<br>+91 9746214172<br>GSTIN-32AAKCD6651P1Z6</p>
+            <table>
+                <tr>
+                    <th>Quick Links</th>
+                    <th>Legal</th>
+                    <th>Information</th>
+                    <th>Company</th>
+                </tr>
+                <tr>
+                    <td><a href="#features">Features</a></td>
+                    <td><a href="#">Terms & Conditions</a></td>
+                    <td><a href="#faq">FAQ</a></td>
+                    <td><a href="#about">About Us</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#user-types">User Type</a></td>
+                    <td><a href="#">Privacy Policy</a></td>
+                    <td><a href="#">Support</a></td>
+                    <td><a href="#career">Career</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Pricing</a></td>
+                    <td><a href="#">Refund Policy</a></td>
+                    <td></td>
+                    <td><a href="#">Contact Us</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a href="#">Cookie Policy</a></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <div>
+                <button>LinkedIn</button>
+                <button>Facebook</button>
+                <button>Instagram</button>
+            </div>
+            <p>A product of <b>Digilaw</b></p>
+            <p>&copy; 2025 Court Click. All rights reserved</p>
+        </div>
     </footer>
+   <script src="script.js"></script>
 </body>
+</html>
 </html>

@@ -1,0 +1,871 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "'Arial', 'Helvetica'", sans-serif,;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+body *{
+    font-family: "Urbanist";
+}
+
+
+.header {
+    background: linear-gradient(to right, #511131, #2c1531);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.navi img {
+    height: 26px;
+    width: auto;
+}
+
+.navi nav {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.navi nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: opacity 0.3s;
+}
+
+.navi nav a:hover {
+    opacity: 0.8;
+}
+
+.navi button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.navi button:first-of-type {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.navi button:last-of-type {
+    background: #6b2d5f;
+    color: white;
+}
+
+.navi button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+
+.mobile-menu-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+
+@media (max-width: 768px) {
+    .navi nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #2c1531;
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+    
+    .navi nav.show {
+        display: flex;
+    }
+}
+
+
+main section > div {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-section {
+    padding: 80px 0;
+    text-align: left;
+    position: relative;
+    min-height: 600px;
+}
+
+.hero-section > *:not(.hero-image) {
+    position: relative;
+    z-index: 2;
+    max-width: 50%;
+}
+
+.hero-section h6 {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+.smallh {
+    font-weight: 100;
+}
+
+.hero-section h1 strong {
+    color: #1a1a1a;
+}
+
+.hero-section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.hero-section button {
+    padding: 15px 30px;
+    background: white;
+    color: #6b2d5f;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: all 0.3s;
+    border: 1px solid #6b2d5f;
+}
+
+.hero-section button:hover {
+    background: #511131;
+    transform: translateY(-2px);
+    color: white;
+}
+
+
+.hero-section table {
+    margin: 40px 0;
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+}
+
+.hero-section table th {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1a1a1a;
+    padding: 10px;
+    text-align: left;
+}
+
+.hero-section table td {
+    font-size: 14px;
+    color: #666;
+    padding: 5px 10px;
+}
+
+
+.hero-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: right;
+    margin: 0;
+    z-index: 1;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    max-height: 90vh;
+}
+
+
+.features {
+    padding: 80px 0;
+    text-align: center;
+    background: #f8f8f8;
+}
+
+.features h6 {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.features h1 {
+    font-size: 42px;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.features h1 strong {
+    color: #1a1a1a;
+}
+
+.features > p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features > button {
+    padding: 15px 30px;
+    background: #6b2d5f;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 50px;
+    transition: all 0.3s;
+}
+
+.features > button:hover {
+    background: #511131;
+}
+
+
+.cardsection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.card img {
+    margin-bottom: 20px;
+}
+
+.card h3, .card h4, .card h5, .card h6 {
+    font-size: 20px;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.card button {
+    padding: 10px 20px;
+    background: white;
+    color: #6b2d5f;
+    border: 1px solid #6b2d5f;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.card button:hover {
+    background: #6b2d5f;
+    color: white;
+}
+
+
+.About {
+    padding: 80px 0;
+    text-align: center;
+    background: #ffffff;
+    color:#11060C;
+}
+
+.About h4 {
+    font-size: 16px;
+    color: #999;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.About h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #11060C;
+}
+
+.About h1 strong {
+    color: #11060C;
+}
+
+.About > p {
+    font-size: 18px;
+    color: #999;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.About > button {
+    padding: 15px 30px;
+    background: white;
+    color: #11060C;
+    border: 1px solid #11060C;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    transition: all 0.3s;
+}
+
+.About > button:hover {
+    background: #511131;
+    color: white;
+    
+}
+
+.About img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.userType {
+    padding: 80px 0;
+    text-align: center;
+    background: #11060C;
+}
+
+.userType h4 {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.userType h1 {
+    font-size: 42px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.userType h1 strong {
+    color: #ffffff;
+}
+
+.userType > p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 50px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cardsection2 {
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.userType .card{
+    background-color: #11060C;
+}
+
+
+.uk {
+    padding: 80px 0;
+    background: #ffffff;
+    color: black;
+}
+
+.uk h1 {
+    font-size: 42px;
+    color: #11060C;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.uk h1 strong {
+    color: #11060C;
+}
+
+.uk > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: center;
+}
+
+.uk img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.uk h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #11060C;
+}
+
+.uk p {
+    font-size: 16px;
+    color: #11060C;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.uk button {
+    padding: 12px 25px;
+    background: #6b2d5f;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+}
+
+.uk button:hover {
+    background: #511131;
+}
+
+
+.testimonials {
+    padding: 80px 0;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+.testimonials h4 {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.testimonials h1 {
+    font-size: 42px;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.testimonials h1 strong {
+    color: #1a1a1a;
+}
+
+.testimonials > div:first-of-type {
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonials .card {
+    background: white;
+    padding: 40px;
+    text-align: left;
+}
+
+.testimonials .card p:first-of-type {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonials .card p strong {
+    font-size: 18px;
+    color: #1a1a1a;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.testimonials .card p:not(:first-of-type):not(strong) {
+    font-size: 14px;
+    color: #666;
+}
+
+.testimonials table {
+    margin: 50px auto 0;
+    max-width: 800px;
+    width: 100%;
+}
+
+.testimonials table th {
+    font-size: 48px;
+    font-weight: bold;
+    color: #1a1a1a;
+    padding: 20px;
+}
+
+.testimonials table td {
+    font-size: 16px;
+    color: #666;
+    padding: 10px;
+}
+
+
+.faq {
+    padding: 80px 0;
+    background: white;
+    text-align: center;
+}
+
+.faq h4 {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.faq h1 {
+    font-size: 42px;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.faq h1 strong {
+    color: #1a1a1a;
+}
+
+.faq > p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 50px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.faq .grid {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faq .grid > div {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.faq-item {
+    background: #f8f8f8;
+    padding: 0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.faq-item > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.faq-item:hover {
+    background: #eeeeee;
+}
+
+.faq-item p:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    color: #6b2d5f;
+    margin-right: 15px;
+}
+
+.faq-item p:nth-child(2) {
+    font-size: 18px;
+    color: #1a1a1a;
+    flex: 1;
+}
+
+.faq-toggle {
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    color: #6b2d5f;
+    cursor: pointer;
+    padding: 0 10px;
+    line-height: 1;
+}
+
+.faq-answer {
+    display: none;
+    padding: 0 20px 20px 20px;
+    background: white;
+    text-align: left;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.faq-answer.active {
+    display: block;
+}
+
+
+.footer {
+    background: #11060C;
+    color: white;
+    padding: 60px 20px 20px;
+    text-align: left;
+}
+
+.footer > img {
+    margin-bottom: 20px;
+}
+
+.footer > p:first-of-type {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.footer table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px 0;
+    border-collapse: collapse;
+}
+
+.footer table th {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.footer table td {
+    font-size: 14px;
+    color: #999;
+    padding: 8px 10px;
+}
+
+.footer table td a {
+    color: #999;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer table td a:hover {
+    color: white;
+}
+
+.footer button {
+    background: transparent;
+    border: 1px solid #444;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.footer button:hover {
+    background: #6b2d5f;
+    border-color: #6b2d5f;
+}
+
+.footer > p:last-of-type {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .navi {
+        position: relative;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .hero-section {
+        min-height: auto;
+    }
+    
+    .hero-section > *:not(.hero-image) {
+        max-width: 100%;
+    }
+    
+    .hero-image {
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        margin: 40px 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 36px;
+    }
+    
+    .features h1,
+    .About h1,
+    .userType h1,
+    .uk h1,
+    .testimonials h1,
+    .faq h1 {
+        font-size: 32px;
+    }
+    
+    .cardsection,
+    .cardsection2 {
+        grid-template-columns: 1fr;
+    }
+    
+    .uk > div {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonials > div:first-of-type {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer table {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero-section {
+        padding: 40px 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 28px;
+    }
+    
+    .hero-section p {
+        font-size: 16px;
+    }
+    
+    .features,
+    .About,
+    .userType,
+    .uk,
+    .testimonials,
+    .faq {
+        padding: 40px 0;
+    }
+    
+    .features h1,
+    .About h1,
+    .userType h1,
+    .uk h1,
+    .testimonials h1,
+    .faq h1 {
+        font-size: 24px;
+    }
+    
+    .navi button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    
+    .hero-section table th {
+        font-size: 28px;
+    }
+    
+    .testimonials table th {
+        font-size: 36px;
+    }
+}
+
